@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="A Responsive Navigation Menu"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+        <title>Navigation Menu Project</title>
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="top-gear-logo.jpg" alt="Top Gear Logo"/>
+            <h1>TOP GEAR<br/>CAR DEALERS</h1>
+            <nav>
+                <input type="checkbox" id="check"/>
+                <label for="check" class="checkbtn">
+                     <i class="fa-solid fa-bars"></i> 
+                </label>
+                <ul>
+                    <li><a href="#about-info">ABOUT</a></li>
+                    <li><a href="#services-info">SERVICES</a></li>
+                    <li><a href="#gallery-pics">GALLERY</a></li>
+                    <li><a href="#survey-form">SURVEY</a></li>
+                    <li><a href="#contact-info">CONTACT</a></li>
+                </ul>
+            </nav>
+        
+        </header>
+    
+        <main>
+            <section role="region" aria-labelledby="about-info">
+                <h2 id="about-info">About Us:</h2>
+                <p>Top Gear Car Dealers is a motor-vehicle company which deals with cars known all over the world. It has its headquarters in Nairobi, Kenya. Working hours range from 8:00 a.m. to 6:00 p.m.</p>
+
+            </section>
+            <section role="region" aria-labelledby="services-info">
+                <h2 id="services-info">Services</h2>
+                <p>We offer the following services:</p>
+                <ol>
+                    <li>Hiring out of cars.</li>
+                    <li>Car Export.</li>
+                    <li>Car Repair and Maintenance.</li>
+                    <li>Selling of Car Parts.</li>
+                </ol>
+            </section>
+            <section role="region" aria-labelledby="gallery-pics">
+                <h2 id="gallery-pics">Sample Car Gallery</h2>
+                <p>The following are some of the cars we sell and hire out:</p>
+                <div class="car-gallery">
+                    <img src="75406.jpg" alt="Car 1 is displayed here."/>
+                    <img src="218809.jpg" alt="Car 2 is displayed here."/>
+                    <img src="256281.jpg" alt="Car 3 is displayed here."/>
+                    <img src="416563.jpg" alt="Car 4 is displayed here."/>
+                    <img src="709721.jpg" alt="Car 5 is displayed here."/>
+                    <img src="976529.jpg" alt="Car 6 is displayed here."/>
+                </div>
+            </section>
+            <form method="POST">
+                <section role="region" aria-labelledby="survey-form">
+                    <h2 id="survey-form">Survey Section</h2>
+                    <div class=survey12>
+                        <div class="survey1">
+                            <label for="identification">How did you learn about us?</label>
+                            <select name="identification" id="identification" required>
+                                <option value="">Select an option</option>
+                                <option value="1">Via Youtube</option>
+                                <option value="2">Told by a friend</option>
+                                <option value="3">Through reading newspapers</option>
+                            </select>
+                        </div>
+                        <br/>
+                        <hr/>
+                        <div class="survey2">
+                            <label for="inquiries">Do you have any questions regarding our company?</label>
+                            <div class="answer">
+                                <textarea required id="inquiries" name="inquiries" rows="5" cols="24" placeholder="Ask anything about us..."></textarea>
+                            </div>
+                  
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <button type="submit">Submit Info</button>
+                </section>
+            </form>
+            <section>
+                <h2 id="contact-info">Tel. No: </h2><span>+254 111 222 777.</span>
+                <p>Located at Sky View Building.</p>
+                <p>Nairobi,Kenya.</p>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,147 @@
+*{ 
+    
+    scroll-behavior: smooth;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: burlywood;
+    width:100%;
+    height:100%;
+}                           
+header{
+    width: 100%;
+    height: 9.5rem;
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0rem;
+    
+}   
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    color: darkblue;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+#about-info{
+    margin-top: 10rem;
+}
+h2{
+    margin-top:3rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.car-gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+.car-gallery img{
+    width:30%;
+    height:300px;
+    max-height: 350px;
+    border-radius:10px;
+    object-fit: fill;
+}
+nav{
+    width:100%;
+}
+nav > ul {
+display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center; 
+  height: 100%; 
+  }
+nav ul li{ 
+    display: block;
+    margin: 1rem;
+    background-color: rgb(220, 20, 197);
+    font-weight: bold;
+    transition: 1s;
+}
+nav ul li:hover{
+    background-color: rgb(60, 220, 20);
+    color: aliceblue;
+    border: 1px solid black;  
+}
+header img{
+width:max(100px,9rem);
+object-fit: fill;
+margin-right: 0;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right; 
+    margin-right: 3rem;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width:600px) {
+    header{
+        position: fixed;
+        height:7rem;
+        margin-bottom: 5rem;
+    }
+    header img{
+        width:6rem;
+        height: 4rem;
+        object-fit: fill;
+        margin-right: 0;
+    }
+    h1{
+        display: none;
+    }
+    
+.checkbtn{
+        display:block;
+    }
+ ul{
+    position: fixed;
+    width:100%;
+    height:100vh;
+    background: #2c3e50;
+    top:80px;
+    left:0px;
+    text-align:center;
+    transition: all .5s;
+    
+}
+nav ul li{
+    display: block;
+    width: 40%;
+}
+nav ul li a{
+    font-size: 20px;
+    
+}
+#check:checked~ul{
+    left: 600px;
+
+}
+a:hover{
+    background: none;
+    color: #0082e6;  
+}
+}
